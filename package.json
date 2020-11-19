@@ -1,8 +1,8 @@
 {
-  "name": "react-notion-example",
+  "name": "bryan-de-ridder",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Tobias Lins",
+  "author": "Bryan de Ridder",
   "license": "MIT",
   "scripts": {
     "dev": "next",

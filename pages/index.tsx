@@ -20,7 +20,7 @@ const Home = ({ blockMap }) => (
   <div>
     <Head>
       <style>{`body { margin: 0;}`}</style>
-      <title>react-notion example</title>
+      <title>Bryan de Ridder</title>
     </Head>
     <NotionRenderer
       blockMap={blockMap}
