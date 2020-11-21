@@ -21,7 +21,7 @@ const Home = ({ blockMap }) => (
   <div>
     <NextSeo
       title={"Bryan de Ridder"}
-      description="Hi, I'm Bryan! I like software programming and designing user interfaces."
+      description="Full stack developer - Android - iOS - UI/UX - Java/Kotlin"
       openGraph={{
         images: [
           {
