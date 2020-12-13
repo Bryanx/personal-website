@@ -1,4 +1,5 @@
 import "react-notion/src/styles.css";
+import '../styles/global.css'
 import "prismjs/themes/prism-tomorrow.css";
 import React from "react";
 import Head from 'next/head';

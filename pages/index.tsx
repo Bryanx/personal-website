@@ -6,7 +6,7 @@ import fetch from "node-fetch";
 
 export async function getStaticProps() {
   const data: BlockMapType = await fetch(
-    "https://notion-api.splitbee.io/v1/page/d8ea983c5002452c9bcb23aa331dcb24"
+    "https://notion-api.splitbee.io/v1/page/190e4f3b7d0646d592e46905272a86f3"
   ).then(res => res.json());
 
   return {
