@@ -1,24 +1,24 @@
-import { NotionRenderer, BlockMapType } from "react-notion";
-import fetch from "node-fetch";
 import { useRouter } from 'next/router'
-import React from "react";
+import React, {useEffect} from "react";
 import Head from "next/head";
 import { NextSeo } from "next-seo";
-import Link from "next/link";
 import Image from "next/image";
 
 export async function getServerSideProps(context) {
-  const data: BlockMapType = await fetch(
-    "https://notion-api.splitbee.io/v1/page/95487d06a4934a85b9d4d4ba559de73f"
-  ).then(res => res.json());
   return {
     props: {
-      blockMap: data
+      id: context.params?.id
     }
   };
 }
 
-const PageComponent = ({ blockMap }) => {
+const PageComponent = ({ id }) => {
+  const router = useRouter()
+
+  useEffect(() => { 
+    router.push('intent://bryanderidder.nl/byheart/' + id + '#Intent;scheme=byheart;action=android.intent.action.VIEW;end')
+  });
+  
   return (
     <>
       <NextSeo
